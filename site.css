@@ -1,0 +1,282 @@
+/* ------------------------------------------
+  Reset ♥
+  http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License: none (public domain)
+---------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  font-size:100%;
+  font:inherit;
+  vertical-align:baseline;
+  }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display:block;
+  }
+body { line-height:1; }
+ol, ul { list-style:none;  }
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content:''; content:none; }
+/* tables still need 'cellspacing="0"' in the markup */
+table { border-collapse: collapse; border-spacing:0; }
+/* remember to define focus styles. Hee Haw */
+:focus { outline:0; }
+
+/*-----------------------------------
+  Typography
+-------------------------------------*/
+input,
+textarea,
+body {
+  background:#eee;
+  font:16px/26px Georgia, serif;
+  color:#404040;
+  }
+body {
+  margin:0; padding:0;
+  }
+h1,
+.padding,
+.credits,
+.button {
+  font:13px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+h1 {
+  font-size:13px;
+  font-weight:bold;
+  line-height:20px;
+  margin:0 0 5px;
+  }
+h2 {
+  font-size:23px;
+  line-height:1.333em;
+  margin:5px 0 20px;
+  }
+h3 {
+  font-size:20px;
+  line-height:1.333em;
+  margin:0 0 10px;
+  }
+h4 {
+  font-size:14px;
+  font-weight:bold;
+  margin:0 0 10px;
+  }
+
+a {
+  text-decoration:none;
+  color:#999;
+  -webkit-transition:color 50ms linear;
+     -moz-transition:color 50ms linear;
+       -o-transition:color 50ms linear;
+          transition:color 50ms linear;
+  }
+  a:hover {
+    color:#1F90FF;
+    }
+  .section p a {
+    text-decoration:underline;
+    }
+
+img {
+  max-width:100%;
+  margin:0 0 10px;
+  }
+
+p {
+  margin:0 0 20px;
+  }
+
+/*-----------------------------------
+  Layout
+-------------------------------------*/
+#header {
+  padding:30px 40px 20px;
+  }
+.limiter {
+  width:720px;
+  margin:40px auto 60px;
+  }
+.inner {
+  padding:30px 40px 10px;
+  }
+.col {
+  float:left;
+  width:33.333333%;
+  }
+.padding {
+  height:280px;
+  height:auto!important;
+  min-height:280px;
+  padding:30px 20px 20px 20px;
+  }
+  .padding.first {
+    padding-left:40px;
+    }
+  .padding.last {
+    padding-right:40px;
+    }
+
+/*-----------------------------------
+  Style
+-------------------------------------*/
+#header {
+  background:#9ED485;
+  color:#335C20;
+  font-size:26px;
+  line-height:40px;
+  margin-bottom:40px;
+  }
+  #header a {
+    color:#fff;
+    }
+  #header h1 {
+    color:#2C4F1C;
+    }
+
+.section {
+  background:#fff;
+  border-bottom:1px solid #dadada;
+  }
+  .section.join {
+    background:#9ED485;
+    color:#335C20;
+    }
+    .section h3 {
+      color:#2C4F1C;
+      }
+    .section.join a {
+      color:#fff;
+      text-decoration:none;
+      }
+
+.padding {
+  background:#dadada;
+  color:#606060;
+  }
+  .padding h4 {
+    color:#404040;
+    }
+
+.credits {
+  background:#303030;
+  padding:40px;
+  color:#808080;
+  }
+  .credits h4 {
+    color:#fff;
+    }
+  .credits a {
+    color:#b0b0b0;
+    font-weight:500;
+    -webkit-transition:color 50ms linear;
+       -moz-transition:color 50ms linear;
+         -o-transition:color 50ms linear;
+            transition:color 50ms linear;
+    }
+    .credits a:hover {
+      color:#fff;
+      }
+
+.button {
+  background:#1F90FF;
+  border:1px solid #006eda;
+  color:#fff;
+  display:block;
+  padding:0 18px;
+  margin:0 5px;
+  text-decoration:none;
+  text-align:center;
+  font-size:14px;
+  font-weight:bold;
+  height:38px;
+  line-height:38px;
+  display:inline-block;
+  text-decoration:none;
+  -webkit-transition:background-color 50ms linear;
+     -moz-transition:background-color 50ms linear;
+       -o-transition:background-color 50ms linear;
+          transition:background-color 50ms linear;
+  -webkit-border-radius:4px;
+          border-radius:4px;
+  }
+  .button:hover {
+    background:#0081FF;
+    color:#fff;
+    }
+
+/*-----------------------------------
+  Lil Helpers
+-------------------------------------*/
+.centered {
+  display:block;
+  margin:0 auto 20px;
+  text-align:center;
+  }
+.fl { float:left; }
+.fr { float:right; }
+
+/*Markup free clearing
+Details: http: //perishablepress.com/press/2009/12/06/new-clearfix-hack*/
+.clearfix:after {
+  content:'';
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+  }
+* html .clearfix { height:1%; }
+*:first-child + html .clearfix { min-height:1%; }
+
+/*-----------------------------------
+  Mobile
+-------------------------------------*/
+@media only screen and (max-width:640px) {
+  .limiter {
+    width:100%;
+    max-width:100%;
+    margin:0;
+    }
+  #header,
+  .credits,
+  .inner {
+    padding:20px;
+    margin:0;
+    }
+  .fl,
+  .fr,
+  .col {
+    display:block;
+    width:100%;
+    float:none;
+    }
+  .padding {
+    min-height:auto;
+    margin:0 0 1px;
+    padding:30px 20px 10px;
+    }
+  .button {
+    margin:0 0 5px;
+    }
+  .centered {
+    text-align:left;
+    }
+}
