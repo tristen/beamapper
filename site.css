@@ -75,25 +75,22 @@ h3 {
   line-height:1.333em;
   margin:0 0 10px;
   }
-h4 {
+.titling, h4 {
   font-size:14px;
   font-weight:bold;
   margin:0 0 10px;
   }
 
 a {
+  color:#1F90FF;
   text-decoration:none;
-  color:#999;
   -webkit-transition:color 50ms linear;
      -moz-transition:color 50ms linear;
        -o-transition:color 50ms linear;
           transition:color 50ms linear;
   }
   a:hover {
-    color:#1F90FF;
-    }
-  .section p a {
-    text-decoration:underline;
+    color:#006eda;
     }
 
 img {
@@ -101,9 +98,41 @@ img {
   margin:0 0 10px;
   }
 
+ol, ul,
 p {
   margin:0 0 20px;
   }
+
+/*Fancy ordered list counter*/
+ol{
+  font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+	counter-reset:li;
+	*list-style:decimal;
+  margin-left:20px;
+  }
+  ol li {
+    position:relative;
+    display:block;
+    padding:5px 0 10px 24px;
+    margin:0 0 1px;
+    }
+    ol li:before{
+      background:#404040;
+      color:#fff;
+      content:counter(li);
+      counter-increment:li;
+      position:absolute;	
+      left:-20px;
+      top:50%;
+      margin-top:-16px;
+      height:32px;
+      width:32px;
+      line-height:32px;
+      text-align:center;
+      border-radius:50%;
+      font-size:14px;
+      font-weight:500;
+      }
 
 /*-----------------------------------
   Layout
@@ -172,7 +201,7 @@ p {
   background:#dadada;
   color:#606060;
   }
-  .padding h4 {
+  .padding .titling {
     color:#404040;
     }
 
@@ -181,7 +210,7 @@ p {
   padding:40px;
   color:#808080;
   }
-  .credits h4 {
+  .credits .titling {
     color:#fff;
     }
   .credits a {
@@ -268,6 +297,7 @@ Details: http: //perishablepress.com/press/2009/12/06/new-clearfix-hack*/
     width:100%;
     float:none;
     }
+  .padding.first,
   .padding {
     min-height:auto;
     margin:0 0 1px;
